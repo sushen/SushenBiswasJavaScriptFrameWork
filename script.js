@@ -1,5 +1,6 @@
-var a = 6;
-var b = 5;
+var coin;
+coin = ["brc" , "eth", "xmp", "ada", "agi"];
 
-
-a == b? console.log("Match") : console.log("Not Match");
+var htmlArray = coin.join("</br>");
+document.body.innerHTML =  htmlArray ;
+// console.log(" Array String is " + htmlArray)

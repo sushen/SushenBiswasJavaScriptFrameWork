@@ -1,12 +1,5 @@
-var a = 5;
+var a = 6;
 var b = 5;
-var theNumberMatch;
 
-if(a == b){
-  theNumberMatch = true;
-}
-else{
-  theNumberMatch = false;
-}
 
-console.log("the number match " + theNumberMatchs)
+a == b? console.log("Match") : console.log("Not Match");

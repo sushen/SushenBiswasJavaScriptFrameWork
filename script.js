@@ -1,6 +1,13 @@
-var coin;
-coin = ["brc" , "eth", "xmp", "ada", "agi"];
+btcCoinMarketPrice = 37855;
+profitPercentigeInput = -6.5;
 
-var htmlArray = coin.join("</br>");
-document.body.innerHTML =  htmlArray ;
-// console.log(" Array String is " + htmlArray)
+function btcPrice() {
+  var currentPrice = btcCoinMarketPrice;
+  var profitPercentige = profitPercentigeInput;
+  var priceWithProfit = ((currentPrice * profitPercentige)/ 100) + currentPrice;
+
+  return priceWithProfit;
+
+}
+
+console.log(btcPrice());

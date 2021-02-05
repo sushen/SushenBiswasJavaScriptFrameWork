@@ -1,2 +1,12 @@
-var date = new Date();
-document.body.innerHTML = "<h1>Today is: " +date+ "</h1>";
+var a = 5;
+var b = 5;
+var theNumberMatch;
+
+if(a == b){
+  theNumberMatch = true;
+}
+else{
+  theNumberMatch = false;
+}
+
+console.log("the number match " + theNumberMatchs)

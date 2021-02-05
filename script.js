@@ -1,13 +1,10 @@
-btcCoinMarketPrice = 37855;
-profitPercentigeInput = -6.5;
 
-function btcPrice() {
-  var currentPrice = btcCoinMarketPrice;
-  var profitPercentige = profitPercentigeInput;
+function btcPrice(currentPrice,profitPercentige) {
+
   var priceWithProfit = ((currentPrice * profitPercentige)/ 100) + currentPrice;
 
   return priceWithProfit;
 
 }
 
-console.log(btcPrice());
+console.log(btcPrice(37855,-6.5));

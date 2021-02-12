@@ -12,6 +12,7 @@ var etchereumProfitPrice = criptoSellingPrice(1750,18);
 
 function profitableCripto(bitcoinProfitPrice,etchereumProfitPrice){
   var result;
+  //this find the biggest number
   bitcoinProfitPrice>etchereumProfitPrice? result = ["bitcoin Profit is big Price = ",bitcoinProfitPrice]: result = ["etchereum Profit Price is Big",etchereumProfitPrice]
   return result;
 }

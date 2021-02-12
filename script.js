@@ -17,7 +17,8 @@ function profitableCripto(bitcoinProfitPrice,etchereumProfitPrice){
   return result;
 }
 
-var whichIsBig = profitableCripto(44679,1711166);
+var whichIsBig = profitableCripto(bitcoinProfitPrice,etchereumProfitPrice);
 
 console.log(whichIsBig);
-// console.log(bitcoinProfit);
+console.log(bitcoinProfitPrice);
+console.log(etchereumProfitPrice)

@@ -1,10 +1,22 @@
 
-function btcPrice(currentPrice,profitPercentige) {
+function criptoSellingPrice(currentPresentPrice,profitPercentige) {
 
-  var priceWithProfit = ((currentPrice * profitPercentige)/ 100) + currentPrice;
+  var priceWithProfit = ((currentPresentPrice * profitPercentige)/ 100) + currentPresentPrice;
 
   return priceWithProfit;
 
 }
 
-console.log(btcPrice(37855,-6.5));
+var bitcoinProfitPrice = criptoSellingPrice(44700,11);
+var etchereumProfitPrice = criptoSellingPrice(1750,18);
+
+function profitableCripto(bitcoinProfitPrice,etchereumProfitPrice){
+  var result;
+  bitcoinProfitPrice>etchereumProfitPrice? result = ["bitcoin Profit is big Price = ",bitcoinProfitPrice]: result = ["etchereum Profit Price is Big",etchereumProfitPrice]
+  return result;
+}
+
+var whichIsBig = profitableCripto(44679,1711166);
+
+console.log(whichIsBig);
+// console.log(bitcoinProfit);
